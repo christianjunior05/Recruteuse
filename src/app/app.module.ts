@@ -13,6 +13,8 @@ import { ConnexionRecruteurComponent } from './connexion-recruteur/connexion-rec
 import { ConnexionCandidatComponent } from './connexion-candidat/connexion-candidat.component';
 import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
 import { NewMdpComponent } from './new-mdp/new-mdp.component';
+import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
+import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { NewMdpComponent } from './new-mdp/new-mdp.component';
     ConnexionRecruteurComponent,
     ConnexionCandidatComponent,
     RecupMdpComponent,
-    NewMdpComponent
+    NewMdpComponent,
+    DashboardAdminComponent,
+    ConnexionAdminComponent
   ],
   imports: [
     BrowserModule,

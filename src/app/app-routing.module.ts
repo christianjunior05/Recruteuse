@@ -12,18 +12,22 @@ import { InscriptionCandidatComponent } from './inscription-candidat/inscription
 import { JobsComponent } from './jobs/jobs.component';
 import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
 import { NewMdpComponent } from './new-mdp/new-mdp.component';
+import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
+import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 
 const routes: Routes = [
-  {path: 'accueil' , component: AccueilComponent},
-  {path :'connexion-recruteur' , component: ConnexionRecruteurComponent},
-  {path :'connexion-candidat' , component: ConnexionCandidatComponent},
+  {path:  'accueil' , component: AccueilComponent},
+  {path : 'connexion-recruteur' , component: ConnexionRecruteurComponent},
+  {path : 'connexion-candidat' , component: ConnexionCandidatComponent},
   {path : 'espace-candidat', component:EspaceCandidatComponent},
   {path : 'espace-recruteur' , component: EspaceRecruteurComponent},
   {path : 'inscription-recruteur' , component: InscriptionRecruteurComponent},
   {path : 'inscription-candidat' , component: InscriptionCandidatComponent},
-  {path :'jobs' , component:JobsComponent},
+  {path : 'jobs' , component:JobsComponent},
   {path : 'recup-mdp' , component: RecupMdpComponent},
-  {path : 'new-mdp' , component: NewMdpComponent}
+  {path : 'new-mdp' , component: NewMdpComponent},
+  {path : 'dashboard-admin' ,component :DashboardAdminComponent},
+  {path : 'connexion-admin' , component:ConnexionAdminComponent}
 ];
 
 @NgModule({
