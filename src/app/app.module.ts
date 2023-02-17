@@ -3,10 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { InscriptionCandidatComponent } from './inscription-candidat/inscription-candidat.component';
+import { InscriptionRecruteurComponent } from './inscription-recruteur/inscription-recruteur.component';
+import { EspaceCandidatComponent } from './espace-candidat/espace-candidat.component';
+import { EspaceRecruteurComponent } from './espace-recruteur/espace-recruteur.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { ConnexionRecruteurComponent } from './connexion-recruteur/connexion-recruteur.component';
+import { ConnexionCandidatComponent } from './connexion-candidat/connexion-candidat.component';
+import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
+import { NewMdpComponent } from './new-mdp/new-mdp.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AccueilComponent,
+    InscriptionCandidatComponent,
+    InscriptionRecruteurComponent,
+    EspaceCandidatComponent,
+    EspaceRecruteurComponent,
+    JobsComponent,
+    ConnexionRecruteurComponent,
+    ConnexionCandidatComponent,
+    RecupMdpComponent,
+    NewMdpComponent
   ],
   imports: [
     BrowserModule,
