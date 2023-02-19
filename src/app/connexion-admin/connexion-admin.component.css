@@ -1,0 +1,18 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  text-align: center;
+}
+form{
+ width: 500px;
+}
+.btn{
+  text-align: end;
+}
+a
+{
+  color: black;
+}

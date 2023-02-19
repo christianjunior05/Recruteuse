@@ -16,7 +16,7 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 
 const routes: Routes = [
-  {path:  'accueil' , component: AccueilComponent},
+  {path:  '' , component: AccueilComponent},
   {path : 'connexion-recruteur' , component: ConnexionRecruteurComponent},
   {path : 'connexion-candidat' , component: ConnexionCandidatComponent},
   {path : 'espace-candidat', component:EspaceCandidatComponent},

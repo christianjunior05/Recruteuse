@@ -3,7 +3,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .title{
@@ -17,4 +17,7 @@ form{
   text-align: end;
 }
 
-
+a
+{
+  color: black;
+}
