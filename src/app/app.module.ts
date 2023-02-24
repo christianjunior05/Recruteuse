@@ -15,6 +15,7 @@ import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
 import { NewMdpComponent } from './new-mdp/new-mdp.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
+import { ProfilCComponent } from './profil-c/profil-c.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.compo
     RecupMdpComponent,
     NewMdpComponent,
     DashboardAdminComponent,
-    ConnexionAdminComponent
+    ConnexionAdminComponent,
+    ProfilCComponent
   ],
   imports: [
     BrowserModule,
