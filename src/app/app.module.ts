@@ -16,6 +16,7 @@ import { NewMdpComponent } from './new-mdp/new-mdp.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 import { ProfilCComponent } from './profil-c/profil-c.component';
+import { ProfilEditComponent } from './profil-edit/profil-edit.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProfilCComponent } from './profil-c/profil-c.component';
     NewMdpComponent,
     DashboardAdminComponent,
     ConnexionAdminComponent,
-    ProfilCComponent
+    ProfilCComponent,
+    ProfilEditComponent
   ],
   imports: [
     BrowserModule,
