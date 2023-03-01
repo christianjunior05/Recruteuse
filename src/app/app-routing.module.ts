@@ -14,7 +14,6 @@ import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
 import { NewMdpComponent } from './new-mdp/new-mdp.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
-import { ProfilEditComponent } from './profil-edit/profil-edit.component';
 
 const routes: Routes = [
   {path:  '' , component: AccueilComponent},
@@ -28,9 +27,7 @@ const routes: Routes = [
   {path : 'recup-mdp' , component: RecupMdpComponent},
   {path : 'new-mdp' , component: NewMdpComponent},
   {path : 'dashboard-admin' ,component :DashboardAdminComponent},
-  {path : 'connexion-admin' , component:ConnexionAdminComponent},
-  {path : 'profil-edit' , component:ProfilEditComponent},
-
+  {path : 'connexion-admin' , component:ConnexionAdminComponent}
 ];
 
 @NgModule({

@@ -16,7 +16,11 @@ import { NewMdpComponent } from './new-mdp/new-mdp.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 import { ProfilCComponent } from './profil-c/profil-c.component';
+<<<<<<< HEAD
 import { ProfilEditComponent } from './profil-edit/profil-edit.component';
+=======
+import { PublierOffreComponent } from './publier-offre/publier-offre.component';
+>>>>>>> d2df7fb9a1f1b33c623beb59449097b57af5fdd4
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { ProfilEditComponent } from './profil-edit/profil-edit.component';
     DashboardAdminComponent,
     ConnexionAdminComponent,
     ProfilCComponent,
+<<<<<<< HEAD
     ProfilEditComponent
+=======
+    PublierOffreComponent
+>>>>>>> d2df7fb9a1f1b33c623beb59449097b57af5fdd4
   ],
   imports: [
     BrowserModule,
