@@ -9,11 +9,11 @@ import { EspaceCandidatComponent } from './espace-candidat/espace-candidat.compo
 import { EspaceRecruteurComponent } from './espace-recruteur/espace-recruteur.component';
 import { InscriptionRecruteurComponent } from './inscription-recruteur/inscription-recruteur.component';
 import { InscriptionCandidatComponent } from './inscription-candidat/inscription-candidat.component';
-import { JobsComponent } from './jobs/jobs.component';
 import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
 import { NewMdpComponent } from './new-mdp/new-mdp.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
+import { TrouverEmploiComponent } from './trouver-emploi/trouver-emploi.component';
 
 const routes: Routes = [
   {path:  '' , component: AccueilComponent},
@@ -23,11 +23,11 @@ const routes: Routes = [
   {path : 'espace-recruteur' , component: EspaceRecruteurComponent},
   {path : 'inscription-recruteur' , component: InscriptionRecruteurComponent},
   {path : 'inscription-candidat' , component: InscriptionCandidatComponent},
-  {path : 'jobs' , component:JobsComponent},
   {path : 'recup-mdp' , component: RecupMdpComponent},
   {path : 'new-mdp' , component: NewMdpComponent},
   {path : 'dashboard-admin' ,component :DashboardAdminComponent},
-  {path : 'connexion-admin' , component:ConnexionAdminComponent}
+  {path : 'connexion-admin' , component:ConnexionAdminComponent},
+  {path: 'trouver-emploi' , component:TrouverEmploiComponent}
 ];
 
 @NgModule({

@@ -1,33 +1,27 @@
 <div class="d-flex align-items-start bg-dark" >
-  <div class="nav flex-column nav-pills me-5" style="margin-top: 3rem;" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <button class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Accueil</button>
-    <button class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Offre emploi</button>
-    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Paramètre</button>
-  </div>
+
   <div class="tab-content w-100" id="v-pills-tabContent">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+   
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">La Recruteuse</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <a class="navbar-brand" href="#">La recruteuse</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Profil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#">Offre d'emploi</a>
             </li>
-          </ul> -->
-          <!-- <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Parametres</a>
+            </li>
+            
+          </ul>
+      
         </div>
       </div>
     </nav>
@@ -37,8 +31,14 @@
           <div class="col-lg-4">
             <div class="card mb-4">
               <div class="card-body text-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
-                  class="rounded-circle img-fluid" style="width: 150px;">
+                <div class="col-auto">
+                 
+                    <label for="profile-pic">Sélectionner une photo de profil:</label>
+                    <input type="image" id="profile-pic">
+                  
+                  
+                  
+                </div>
                 <h5 class="my-3">John Smith</h5>
                 <p class="text-muted mb-1">Full Stack Developer</p>
                 <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
@@ -93,8 +93,9 @@
                       </form>
                     </div>
                   </div>
-                </div>
 
+               
+                </div>
               </div>
             </div>
           </div>
@@ -157,9 +158,9 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-md-6">
-                    <div class="card mb-4 mb-md-0" >
+                    <div class="card mb-4 mb-md-0" id="propos">
                         <div class="card-body" >
 
                             <p>A Propos de Moi</p>
@@ -171,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-              </div> -->
+              </div>
               <br>
               <div class="row">
                 <div class="col-md-12">
@@ -180,35 +181,22 @@
                       <p class="mb-4"><span class="fontt ">Atouts</span>
                       </p>
                       <p class="mb-1" style="font-size: .77rem;">Web Design</p>
-                      <div class="progress rounded" style="height: 5px;">
-                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                      
                       <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
-                      <div class="progress rounded" style="height: 5px;">
-                        <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                   
                       <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
-                      <div class="progress rounded" style="height: 5px;">
-                        <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                     
                       <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
-                      <div class="progress rounded" style="height: 5px;">
-                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
+                    
                       <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
-                      <div class="progress rounded mb-2" style="height: 5px;">
-                        <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="66"
-                          aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
+              <h2 class="mb-4">Offre d'emploi
+              </h2>
+     
           <div class="col-lg-12">
             <div class="row">
               <div class="col-md-2">
@@ -231,6 +219,7 @@
                   </div>
                 </div>
               </div>
+           
               <div class="col-md-2">
                 <div class="card mb-4 mb-md-0">
                   <div class="card-body">

@@ -8,7 +8,6 @@ import { InscriptionCandidatComponent } from './inscription-candidat/inscription
 import { InscriptionRecruteurComponent } from './inscription-recruteur/inscription-recruteur.component';
 import { EspaceCandidatComponent } from './espace-candidat/espace-candidat.component';
 import { EspaceRecruteurComponent } from './espace-recruteur/espace-recruteur.component';
-import { JobsComponent } from './jobs/jobs.component';
 import { ConnexionRecruteurComponent } from './connexion-recruteur/connexion-recruteur.component';
 import { ConnexionCandidatComponent } from './connexion-candidat/connexion-candidat.component';
 import { RecupMdpComponent } from './recup-mdp/recup-mdp.component';
@@ -16,11 +15,9 @@ import { NewMdpComponent } from './new-mdp/new-mdp.component';
 import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.component';
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 import { ProfilCComponent } from './profil-c/profil-c.component';
-<<<<<<< HEAD
 import { ProfilEditComponent } from './profil-edit/profil-edit.component';
-=======
-import { PublierOffreComponent } from './publier-offre/publier-offre.component';
->>>>>>> d2df7fb9a1f1b33c623beb59449097b57af5fdd4
+import { TrouverEmploiComponent } from './trouver-emploi/trouver-emploi.component';
+import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +27,6 @@ import { PublierOffreComponent } from './publier-offre/publier-offre.component';
     InscriptionRecruteurComponent,
     EspaceCandidatComponent,
     EspaceRecruteurComponent,
-    JobsComponent,
     ConnexionRecruteurComponent,
     ConnexionCandidatComponent,
     RecupMdpComponent,
@@ -38,11 +34,9 @@ import { PublierOffreComponent } from './publier-offre/publier-offre.component';
     DashboardAdminComponent,
     ConnexionAdminComponent,
     ProfilCComponent,
-<<<<<<< HEAD
-    ProfilEditComponent
-=======
-    PublierOffreComponent
->>>>>>> d2df7fb9a1f1b33c623beb59449097b57af5fdd4
+    ProfilEditComponent,
+    TrouverEmploiComponent,
+    OffresEmploiComponent
   ],
   imports: [
     BrowserModule,
