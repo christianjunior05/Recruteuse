@@ -18,13 +18,13 @@ list-style-type: none;
 .espace{
   margin-right: 25px;
 }
-.en-tete{
+/* .en-tete{
 width: 1140px;
 margin: 0 auto;
 display: flex;
 justify-content: center;
 
-}
+} */
 .trois{
   display: flex;
   justify-content: space-between;
@@ -55,3 +55,32 @@ img{
     color: rgb(60, 170, 214);
     text-align: start;
     }
+.menu-nav{
+  width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.la-vu{
+  background-color: rgb(116, 11, 11);
+  height: 80vh;
+}
+.info-ca{
+  color: white;
+}
+.info-com{
+  color:yellow;
+}
+.forms-el{
+  background-color: white;
+  width: 400px;
+  height: 42px;
+  border-radius: 10px;
+}
+.forms-input{
+  border: none;
+}
+.forms-btn{
+  border: none;
+  background-color: rgb(116, 11, 11);
+}
