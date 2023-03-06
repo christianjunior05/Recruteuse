@@ -16,12 +16,9 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 import { ProfilCComponent } from './profil-c/profil-c.component';
 import { ProfilEditComponent } from './profil-edit/profil-edit.component';
-<<<<<<< Updated upstream
-import { TrouverEmploiComponent } from './trouver-emploi/trouver-emploi.component';
-import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
-=======
 import { PublierOffreComponent } from './publier-offre/publier-offre.component';
->>>>>>> Stashed changes
+import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
+import { PostulerOffreComponent } from './postuler-offre/postuler-offre.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +35,9 @@ import { PublierOffreComponent } from './publier-offre/publier-offre.component';
     DashboardAdminComponent,
     ConnexionAdminComponent,
     ProfilCComponent,
-<<<<<<< Updated upstream
     ProfilEditComponent,
-    TrouverEmploiComponent,
-    OffresEmploiComponent
-=======
-    ProfilEditComponent
->>>>>>> Stashed changes
+    OffresEmploiComponent,
+    PostulerOffreComponent
   ],
   imports: [
     BrowserModule,

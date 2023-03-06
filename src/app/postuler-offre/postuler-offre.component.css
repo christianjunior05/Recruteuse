@@ -1,0 +1,66 @@
+/* Ajout de marges et de rembourrages pour aérer la page */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+  }
+  
+  /* Ajout d'un style visuel pour les champs de formulaire */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  /* Style pour le bouton d'envoi */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+ 
+  
+  /* Style pour les messages de validation de formulaire */
+  input:valid,
+  textarea:valid {
+    border-color: green;
+  }
+  
+  /* Style pour les labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style pour le titre de la page */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  /* Style pour les messages d'erreur générés par le serveur */
+  .alert {
+    margin-top: 30px;
+  }
+  
