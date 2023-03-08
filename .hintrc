@@ -9,6 +9,7 @@
         "duplicate-id-aria": "off"
       }
     ],
-    "axe/aria": "off"
+    "axe/aria": "off",
+    "axe/forms": "off"
   }
 }
