@@ -1,348 +1,44 @@
-<nav>
-  <div class="uk-navbar-left">
-    <h1>La Recruteuse</h1>
-  </div>
+<app-navbar></app-navbar>
 
-  <div class="uk-navbar-right espace " >
-    <ul class="uk-navbar-nav">
-        <li>
-          <a routerLink="/inscription-candidat">Espace candidat</a>
-        </li>
-        <li>
-            <a href="/inscription-recruteur">Espace recruteur</a>
-        </li>
-    </ul>
-  </div>
-</nav>
-<div class="en-tete">
-  <nav class="navbar navbar-expand-sm navbar-light bg-dark d-flex justify-content-center">
-    <div class="container-fluid menu-nav">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </div>
-      </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Trouvez le job parfait,<br>trouvez le talent parfait</h1>
+      <h2>Rejoignez-nous aujourd'hui !</h2>
+      <a  class="btn-get-started">Get Started</a>
     </div>
-  </nav>
-</div>
-<section class="container-fluid la-vu">
-  <div class="container-fluid p-5 contain-info">
-    <div class="row ">
-      <div class="col-lg-6 info-1">
-        <p class="info-com">Commencez votre carrière ici !!</p>
-        <h2 class="info-ca">Vous cherchez un changement de carrière ?</h2>
-        <h5 class="info-ca">Parcourez nos offres d'emploi  dès maintenant!!</h5>
-        <form class="row g-1 forms-el">
-          <div class="col-auto ">
-            <label for="inputPassword2" class="visually-hidden">Entre votre mail</label>
-            <input type="text" class="form-control forms-input" id="inputPassword2" placeholder="Recherche une offre">
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3 forms-btn">Trouvez des offres</button>
-          </div>
-        </form>
-      </div>
-      <div class="col-lg-6 info-2">
-        <img src="assets\images\cadres-travail-equipe_1098-3078.avif" alt="" class="imginfo">
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2 col-md-6 col-sm-6 ">
-          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-            <h3>Filtre</h3>
-            <a class="d-flex align-items-center" href="../components/accordion/">Documentation</a>
-          </div>
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Informatique
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <form action="">
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Developpement informatique</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Analyse de Donnée</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Developpeur frontend</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Developpeur backend</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Infographiste</label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Monde des Affaire
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <form action="">
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Business Developpeur</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Analyse Financière</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Gestionnaire </label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Assurance en Banque</label>
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Infographiste</label>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Ressource Humaines
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            </p>
+
           </div>
         </div>
-        <div class="col-lg-10 col-md-6 col-sm-6">
-          <div class="col-lg-12 m-2">
-            <div class="row">
-              <div class="col-lg-4"></div>
-              <div class="col-lg-8">
-                <form action="" class="row">
-                  <div class="col-lg-8">
-                    <label class="visually-hidden" for="specificSizeInputGroupUsername">Recherchez votre Emploi</label>
-                    <div class="input-group">
-                      <div class="input-group-text"><i class="bi bi-search"></i></div>
-                      <input type="text" class="form-control" id="specificSizeInputGroupUsername" placeholder="Recherchez votre Emploi">
-                      <div class="input-group-text"> <button type="submit" class="btn btn-info text-white">Submit</button></div>
-                    </div>
-                  </div>
-                </form>
-              </div>
 
-            </div>
-          </div>
-          <div class="col-lg-12 popu col-12">
-            <div class="row">
-              <div class="col-lg-12 col-12">
-                <div class="populat">
-                  <h2>Populaire</h2>
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                      <li class="page-item">
-                        <a class="page-link text-dark" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link text-dark" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-10 col-sm-10 col-12">
-                <div class="row justify-content-lg-around">
-                  <div class="col-lg-3 col-md-4 col-12 offre">
-                    <div class="card shadow-sm" style="width: 18rem;">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="assets/entre.jpg" alt="" srcset="" class="avatar">
-                          </div>
-                          <div class="col-lg-8">
-                            <h5 class="card-title">Ivoire Academy</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Entreprise informatique</h6>
-                          </div>
-                        </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-info">Voir details</button>
-                          <button type="button" class="btn btn-sm btn-outline-success">Postuler</button>
-                        </div>
-                        <small class="text-muted">Publié il y a 9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-12 offre ">
-                    <div class="card shadow-sm" style="width: 18rem;">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="assets/entre.jpg" alt="" srcset="" class="avatar">
-                          </div>
-                          <div class="col-lg-8">
-                            <h5 class="card-title">Solibra</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Boire et se souler</h6>
-                          </div>
-                        </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-info">Voir details</button>
-                          <button type="button" class="btn btn-sm btn-outline-success">Postuler</button>
-                        </div>
-                        <small class="text-muted">Publié il y a 9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-12 offre">
-                    <div class="card shadow-sm" style="width: 18rem;">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="assets/entre.jpg" alt="" srcset="" class="avatar">
-                          </div>
-                          <div class="col-lg-8">
-                            <h5 class="card-title">Go market</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Agence commerciale</h6>
-                          </div>
-                        </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-info">Voir details</button>
-                          <button type="button" class="btn btn-sm btn-outline-success">Postuler</button>
-                        </div>
-                        <small class="text-muted">Publié il y a 9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-12 offre">
-                    <div class="card shadow-sm" style="width: 18rem;">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="assets/entre.jpg" alt="" srcset="" class="avatar">
-                          </div>
-                          <div class="col-lg-8">
-                            <h5 class="card-title">Orange CI</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Service Téléphonique</h6>
-                          </div>
-                        </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-info">Voir details</button>
-                          <button type="button" class="btn btn-sm btn-outline-success">Postuler</button>
-                        </div>
-                        <small class="text-muted">Publié il y a 9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-12 offre">
-                    <div class="card shadow-sm" style="width: 18rem;">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="assets/entre.jpg" alt="" srcset="" class="avatar">
-                          </div>
-                          <div class="col-lg-8">
-                            <h5 class="card-title">GesTom</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Cabinet expert comptable</h6>
-                          </div>
-                        </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-info">Voir details</button>
-                          <button type="button" class="btn btn-sm btn-outline-success">Postuler</button>
-                        </div>
-                        <small class="text-muted">Publié il y a 9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-12 offre">
-                    <div class="card shadow-sm" style="width: 18rem;">
-                      <div class="card-body">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <img src="assets/entre.jpg" alt="" srcset="" class="avatar">
-                          </div>
-                          <div class="col-lg-8">
-                            <h5 class="card-title">Bolloré</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Transport logistique</h6>
-                          </div>
-                        </div>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center p-2">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-info">Voir details</button>
-                          <button type="button" class="btn btn-sm btn-outline-success">Postuler</button>
-                        </div>
-                        <small class="text-muted">Publié il y a 9 mins</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-  </div>
-</section>
-<script src="assets/js/script.js"></script>
+    </section><!-- End About Section -->
+  <!-- ======= Footer ======= -->
+ <!-- End Footer -->
 
+ <app-footer></app-footer>
