@@ -1,24 +1,33 @@
 <app-navbar></app-navbar>
-  <div class="uk-section uk-width-auto">
-    <div class="uk-container uk-container-expand uk-width-expand  ">
-      <div class="title">
-        <h1>Connexion administrateur</h1>
-      </div>
-      <form class="uk-form-stacked uk-margin uk-width-auto ">
-        <div class="uk-margin">
-            <div class="uk-form-stacked">
-              <label class="uk-form-label" for="form-horizontal-text">Identifiant</label>
-              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="identifiant">
-            </div>
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header bg-secondary text-white">
+          <h1 class="text-center">Connexion administrateur</h1>
         </div>
-        <div class="uk-margin">
-          <div class="uk-form-stacked">
-            <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="Mot de passe">
-          </div>
+        <div class="card-body">
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="identifiant">Identifiant</label>
+              <input type="text" class="form-control" id="identifiant" placeholder="Identifiant" required>
+              <div class="invalid-feedback">
+                Veuillez entrer votre identifiant.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+              <div class="invalid-feedback">
+                Veuillez entrer votre mot de passe.
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Se connecter</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="uk-margin btn">
-        <button class="uk-button uk-button-secondary" routerLink="/dashboard-admin">Se connecter</button>
-      </div>
-    </form>
     </div>
+  </div>
+</div>
