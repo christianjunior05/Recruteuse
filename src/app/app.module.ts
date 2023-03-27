@@ -17,7 +17,7 @@ import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.compo
 import { ProfilCComponent } from './profil-c/profil-c.component';
 import { ProfilEditComponent } from './profil-edit/profil-edit.component';
 import { TrouverEmploiComponent } from './trouver-emploi/trouver-emploi.component';
-import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
+import { OffreEmploiComponent } from './offre-emploi/offre-emploi.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -39,7 +39,7 @@ import { FooterComponent } from './footer/footer.component';
     ProfilCComponent,
     ProfilEditComponent,
     TrouverEmploiComponent,
-    OffresEmploiComponent,
+    OffreEmploiComponent,
     NavbarComponent,
     FooterComponent,
   
