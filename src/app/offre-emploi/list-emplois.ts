@@ -25,4 +25,12 @@ export const EMPLOIS: Emplois[] =[
     descriptionPoste : "Lptua mauris d dapibus arcu lacinia."
 
 },
+{
+    titre : "UI/UX Designer",
+    lieu : "Paris",
+    typePoste : "A temps plein",
+    competences : " HTML, CSS, JavaScript",
+    descriptionPoste : "Lptua mauris d dapibus arcu lacinia."
+
+},
 ]
