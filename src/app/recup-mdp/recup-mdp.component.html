@@ -1,30 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Récuperation du mot de passe</title>
-</head>
-<body>
-  <div class="uk-section uk-width-auto ">
-
-    <div class="uk-container uk-container-expand uk-width-expand  ">
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
       <div class="title">
-        <h1>Récuperation du mot de passe</h1>
-        </div>
-      <form class="uk-form-stacked uk-margin uk-width-auto ">
-        <div class="uk-margin">
-            <div class="uk-form-stacked">
-              <label class="uk-form-label" for="form-horizontal-text">E-mail</label>
-              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="email" placeholder="email">
-            </div>
-        </div>
-      <div class="uk-margin btn">
-        <button class="uk-button uk-button-secondary" routerLink="/new-mdp">Validez</button>
+        <h1>Récupération du mot de passe</h1>
       </div>
-    </form>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="email">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-secondary">Validez</button>
+        </div>
+      </form>
     </div>
+  </div>
 </div>
-</body>
-</html>
+<br><br><br><br>
+<app-footer></app-footer>

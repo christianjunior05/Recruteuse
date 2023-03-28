@@ -7,9 +7,9 @@ body {
 /* Style du titre */
 h1 {
   font-size: 36px;
-  font-weight: bold;
   text-align: center;
-  color: #fff;
+  font-family: 'Roboto';
+  color: #5fcf80;
   margin-top: 50px;
 }
 
@@ -77,3 +77,42 @@ h1 {
   padding: 15px;
   margin-bottom: 20px;
 }
+
+form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  border: 2px solid #ccc;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-select {
+  border: 2px solid #ccc;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+}
+
+.btn-primary {
+  background-color: #5fcf80;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background-color: #02912d;
+}
+

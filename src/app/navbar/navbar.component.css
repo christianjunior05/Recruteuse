@@ -88,3 +88,7 @@
       overflow-y: auto;
     }
   }
+  a{
+    text-decoration: none;
+    color: #3ac162;
+  }

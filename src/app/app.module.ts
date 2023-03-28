@@ -16,10 +16,10 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 import { ProfilCComponent } from './profil-c/profil-c.component';
 import { ProfilEditComponent } from './profil-edit/profil-edit.component';
-import { TrouverEmploiComponent } from './trouver-emploi/trouver-emploi.component';
 import { OffreEmploiComponent } from './offre-emploi/offre-emploi.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { PostulerOffreComponent } from './postuler-offre/postuler-offre.component';
 
 
 @NgModule({
@@ -38,8 +38,8 @@ import { FooterComponent } from './footer/footer.component';
     ConnexionAdminComponent,
     ProfilCComponent,
     ProfilEditComponent,
-    TrouverEmploiComponent,
     OffreEmploiComponent,
+    PostulerOffreComponent,
     NavbarComponent,
     FooterComponent,
   

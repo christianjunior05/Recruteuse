@@ -1,48 +1,43 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inscription recruteur</title>
-</head>
+<app-navbar></app-navbar>
 <body>
-  <div class="uk-section  uk-width-auto">
+  <div class="uk-section uk-width-auto ">
 
-    <div class="uk-container uk-container-expand uk-width-expand">
+    <div class="uk-container uk-container-expand uk-width-expand  ">
       <div class="title">
         <h1>Inscription</h1>
         </div>
-      <form class="uk-form-stacked uk-margin uk-width-auto">
+      <form class="uk-form-stacked uk-margin uk-width-auto ">
         <div class="uk-margin">
             <div class="uk-form-stacked">
               <label class="uk-form-label" for="form-horizontal-text">Nom de l'entreprise</label>
-              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Nom de l'entreprise">
+              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="email" placeholder="nom de l'entreprise">
             </div>
         </div>
         <div class="uk-margin">
           <div class="uk-form-stacked">
-            <label class="uk-form-label" for="form-horizontal-text">Fonction </label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Fonction">
-          </div>
-      </div>
-        <div class="uk-margin">
-          <div class="uk-form-stacked">
-            <label class="uk-form-label" for="form-horizontal-text">Email </label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="email" placeholder="email">
+            <label class="uk-form-label" for="form-horizontal-text">Fonction</label>
+            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="fonction">
           </div>
       </div>
       <div class="uk-margin">
         <div class="uk-form-stacked">
-          <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
-          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="Mot de passe">
+          <label class="uk-form-label" for="form-horizontal-text">Email</label>
+          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="email">
+
         </div>
     </div>
+    <div class="uk-margin">
+      <div class="uk-form-stacked">
+        <label class="uk-form-label" for="form-horizontal-text">mot de passe</label>
+        <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="mot de passe">
+        <a routerLink="/recup-mdp">mot de psse oublié ?</a>
+      </div>
+  </div>
       <div class="uk-margin btn">
-        <button class="uk-button uk-button-secondary" routerLink='/connexion-recruteur'>S'inscrire</button>
+        <button class="uk-button uk-button-secondary" routerLink="/publier-offre">S'inscrire</button>
       </div>
     </form>
     </div>
 </div>
 </body>
-</html>
+<app-footer></app-footer>
