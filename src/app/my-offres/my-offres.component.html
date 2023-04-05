@@ -27,16 +27,16 @@
   <div  class="container">
     <h1 class="text-center my-5">Liste des offres d'emploi</h1>
     <div class="row">
-      <div *ngFor="let Emploi of emploiListe" class="col-md-6">
+   
         <div class="job-offer">
-          <h2>{{Emploi.titre}}</h2>
-          <p>{{Emploi.lieu}}</p>
-          <p><strong>Type de poste :</strong> {{Emploi.typePoste}}</p>
-          <p><strong>Compétences nécessaires :</strong>{{Emploi.competences}}</p>
-          <p><strong>Description du poste :</strong> {{Emploi.descriptionPoste}}</p>
+          <h2>Emploi.titre</h2>
+          <p>lieu</p>
+          <p><strong>Type de poste :</strong> .typePoste</p>
+          <p><strong>Compétences nécessaires :</strong>.competences</p>
+          <p><strong>Description du poste :</strong> .descriptionPoste</p>
           <a routerLink="/postuler-offre" class="btn btn-primary">Postuler</a>
         </div>
-      </div>
+      
     </div>
   </div>
 </main>

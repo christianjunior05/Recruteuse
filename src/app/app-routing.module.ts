@@ -15,6 +15,10 @@ import { DashboardAdminComponent } from './dashboard-admin/dashboard-admin.compo
 import { ConnexionAdminComponent } from './connexion-admin/connexion-admin.component';
 import { OffreEmploiComponent } from './offre-emploi/offre-emploi.component';
 import { PostulerOffreComponent } from './postuler-offre/postuler-offre.component';
+import { TalentsComponent } from './talents/talents.component';
+import { ProfilCComponent } from './profil-c/profil-c.component';
+import { PublierOffreComponent } from './publier-offre/publier-offre.component';
+import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 
 const routes: Routes = [
   {path:  '' , component: AccueilComponent},
@@ -30,7 +34,13 @@ const routes: Routes = [
   {path : 'dashboard-admin' ,component : DashboardAdminComponent},
   {path : 'connexion-admin' , component: ConnexionAdminComponent},
   {path : 'accueil' , component: AccueilComponent},
-  {path : 'postuler-offre' , component : PostulerOffreComponent}
+  {path : 'postuler-offre' , component : PostulerOffreComponent},
+  {path : 'TalentsComponent' ,component:TalentsComponent},
+  {path : 'profil-c' , component:ProfilCComponent},
+  {path : 'publier-offre' , component: PublierOffreComponent},
+  {path: 'talents' , component: TalentsComponent},
+  {path: 'recherche-emploi' , component: RechercheEmploiComponent}
+
 ];
 
 @NgModule({

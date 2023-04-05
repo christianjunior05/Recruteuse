@@ -1,3 +1,4 @@
+
 #large{
     width: 850px;
 }
@@ -11,10 +12,8 @@ h2{
 h2 {
   font-family: "Poppins";
   font-size: 36px;
-
   margin-bottom: 15px;
 }
-
 h3 {
   font-size: 24px;
   font-weight: 500;
@@ -172,15 +171,11 @@ li p {
     border-radius: 100%;
   }
 
-  .flag_wrapper {
-  }
-
   .profile_desc_section {
     margin-left: 0px;
     margin-bottom: 10px;
     margin-top: -40px;
   }
-
   .info {
     margin-top: 10px;
     margin-left: 33px;
@@ -189,3 +184,101 @@ li p {
 
 /* fygjhkl*/
 
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #3ac162;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #3ac162;
+}
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #3ac162;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+a{
+  text-decoration: none;
+  color: #3ac162;
+}

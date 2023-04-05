@@ -20,6 +20,13 @@ import { OffreEmploiComponent } from './offre-emploi/offre-emploi.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PostulerOffreComponent } from './postuler-offre/postuler-offre.component';
+import { PublierOffreComponent } from './publier-offre/publier-offre.component';
+import { TalentsComponent } from './talents/talents.component';
+import { MyOffresComponent } from './my-offres/my-offres.component';
+import { NavCComponent } from './nav-c/nav-c.component';
+import { NavRComponent } from './nav-r/nav-r.component';
+import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
+
 
 
 @NgModule({
@@ -42,6 +49,12 @@ import { PostulerOffreComponent } from './postuler-offre/postuler-offre.componen
     PostulerOffreComponent,
     NavbarComponent,
     FooterComponent,
+    PublierOffreComponent,
+    TalentsComponent,
+    MyOffresComponent,
+    NavCComponent,
+    NavRComponent,
+    RechercheEmploiComponent
   
   ],
   imports: [
