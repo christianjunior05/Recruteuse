@@ -17,7 +17,16 @@ form{
   text-align: end;
 }
 
-a
-{
-  color: black;
+
+.btn-primary {
+  background-color: #5fcf80;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-primary:hover {
+  background-color: #02912d;
 }

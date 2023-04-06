@@ -1,44 +1,118 @@
+/* Dégradé de fond */
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    line-height: 1.2;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
-  }
-  
-  .card-title {
-    font-size: 24px;
-  }
-  
-  .card-subtitle {
-    font-size: 18px;
-    color: #666;
-  }
-  
-  .card-text {
-    margin-bottom: 1rem;
-  }
-  
-  .list-group-item {
-    border: none;
-    padding: 5px;
-    font-size: 16px;
-  }
+ 
+  margin: 0;
+}
+
+/* Style du titre */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Roboto';
+  color: #5fcf80;
+  margin-top: 50px;
+}
+
+/* Style des blocs d'offres */
+.offer-block {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.offer-block h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4169E1;
+  margin-bottom: 10px;
+}
+
+.offer-block p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.offer-block .location {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.offer-block .type {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.offer-block .skills {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.offer-block a {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #4169E1;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.offer-block a:hover {
+  background-color: #87CEEB;
+}
+.job-offer {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  border: 2px solid #ccc;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-select {
+  border: 2px solid #ccc;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  background-color: #fff;
+}
+
+.btn-primary {
+  background-color: #5fcf80;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+  background-color: #02912d;
+}
+

@@ -1,23 +1,17 @@
-
-
 body{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 .title{
   text-align: center;
 }
 form{
  width: 500px;
-
 }
 .btn{
   text-align: end;
 }
-
 a
 {
   color: black;
@@ -27,8 +21,15 @@ h1{
   font-weight: bold;
   color: #5fcf80;
 }
-.btn-primary{
-
+.btn-primary {
   background-color: #5fcf80;
-
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-primary:hover {
+  background-color: #02912d;
 }
