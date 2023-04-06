@@ -26,6 +26,8 @@ import { MyOffresComponent } from './my-offres/my-offres.component';
 import { NavCComponent } from './nav-c/nav-c.component';
 import { NavRComponent } from './nav-r/nav-r.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
+import { ProfilRComponent } from './profil-r/profil-r.component';
+import { PremiumComponent } from './premium/premium.component';
 
 
 
@@ -54,7 +56,9 @@ import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.co
     MyOffresComponent,
     NavCComponent,
     NavRComponent,
-    RechercheEmploiComponent
+    RechercheEmploiComponent,
+    ProfilRComponent,
+    PremiumComponent
   
   ],
   imports: [

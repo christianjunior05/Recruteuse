@@ -1,0 +1,59 @@
+/* Ajouter un arrière-plan et du remplissage à la section principale */
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Centrer le texte de l'en-tête principal */
+  h1.text-center {
+    text-align: center;
+  }
+  
+  /* Ajouter une bordure et un remplissage à la carte */
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Ajouter un remplissage aux éléments de formulaire */
+  .form-group input {
+    padding: 8px;
+  }
+  
+  /* Style le bouton S'inscrire */
+  .btn {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    display: block; /* Ajouter pour centrer le bouton */
+    margin: 0 auto; /* Ajouter pour centrer le bouton */
+  }
+  
+  /* Ajouter une marge au bouton */
+  .btn {
+    margin-top: 20px; /* Augmenter la marge supérieure */
+    margin-bottom: 20px; /* Augmenter la marge inférieure */
+  }
+  
+  /* Ajouter une marge en haut et en bas aux en-têtes secondaires */
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Réduire la taille de la police pour les petits écrans */
+  @media screen and (max-width: 768px) {
+    h1, h4 {
+      font-size: 24px;
+    }
+    .card-title {
+      font-size: 18px;
+    }
+    /* Réduire la marge du bouton pour les petits écrans */
+    .btn {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  

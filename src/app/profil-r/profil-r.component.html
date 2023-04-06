@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="premium-subscription mt-4" data-aos="fade-right">
+                <h3>Souscrire à l'offre premium</h3>
+                <button type="button" class="btn btn-warning" routerLink="/premium">Souscrire</button>
+            </div>
+            <div class="applicants mt-5" data-aos="fade-right" data-aos-delay="200">
+                <h3>Candidats ayant postulés</h3>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nom du candidat</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Email</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">numero de telephone</h6>
+                        <p class="card-text">Informations sur le candidat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="job-offers mt-5" data-aos="fade-left">
+                <h3>Offres d'emploi</h3>
+                <p>Ici, ajoutez vos offres d'emploi avec la structure ci-dessous</p>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Lieu, Type de poste</h6>
+                        <p class="card-text">Compétences, Description du poste</p>
+                    </div>
+                </div>
+                <button class="btn btn-warning btn-block mt-3" type="button" routerLink="/publier-offre">Publier une offre d'emploi</button>
+            </div>
+        </div>
+        
+    </div>
+</div>

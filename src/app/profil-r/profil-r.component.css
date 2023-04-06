@@ -1,0 +1,26 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .premium-subscription {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .applicants {
+    margin-top: 50px;
+  }
+  
+  .job-offers {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .card {
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  

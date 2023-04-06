@@ -19,6 +19,8 @@ import { TalentsComponent } from './talents/talents.component';
 import { ProfilCComponent } from './profil-c/profil-c.component';
 import { PublierOffreComponent } from './publier-offre/publier-offre.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
+import { PremiumComponent } from './premium/premium.component';
+import { ProfilRComponent } from './profil-r/profil-r.component';
 
 const routes: Routes = [
   {path:  '' , component: AccueilComponent},
@@ -39,7 +41,9 @@ const routes: Routes = [
   {path : 'profil-c' , component:ProfilCComponent},
   {path : 'publier-offre' , component: PublierOffreComponent},
   {path: 'talents' , component: TalentsComponent},
-  {path: 'recherche-emploi' , component: RechercheEmploiComponent}
+  {path: 'recherche-emploi' , component: RechercheEmploiComponent},
+  {path: 'premium', component : PremiumComponent},
+  {path: 'profil-r' , component:ProfilRComponent}
 
 ];
 
