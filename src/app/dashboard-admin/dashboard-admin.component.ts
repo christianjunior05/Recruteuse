@@ -11,5 +11,14 @@ export class DashboardAdminComponent implements OnInit {
 
   ngOnInit(): void {
   }
+    modalVisible = false;
+  
+    openModal() {
+      this.modalVisible = true;
+    }
+  
+    closeModal() {
+      this.modalVisible = false;
+    }
 
 }
