@@ -21,6 +21,7 @@ import { PublierOffreComponent } from './publier-offre/publier-offre.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 import { PremiumComponent } from './premium/premium.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path:  '' , component: AccueilComponent},
@@ -43,8 +44,8 @@ const routes: Routes = [
   {path: 'talents' , component: TalentsComponent},
   {path: 'recherche-emploi' , component: RechercheEmploiComponent},
   {path: 'premium', component : PremiumComponent},
-  {path: 'profil-r' , component:ProfilRComponent}
-
+  {path: 'profil-r' , component:ProfilRComponent},
+  {path : "**" , component: PageNotFoundComponent}
 ];
 
 @NgModule({

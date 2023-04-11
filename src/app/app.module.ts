@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {Aos } from 'aos';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +30,7 @@ import { NavRComponent } from './nav-r/nav-r.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
 import { PremiumComponent } from './premium/premium.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -58,7 +61,8 @@ import { PremiumComponent } from './premium/premium.component';
     NavRComponent,
     RechercheEmploiComponent,
     ProfilRComponent,
-    PremiumComponent
+    PremiumComponent,
+    PageNotFoundComponent
   
   ],
   imports: [
