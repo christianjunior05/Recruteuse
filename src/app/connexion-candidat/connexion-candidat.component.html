@@ -1,37 +1,26 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>connexion candidat</title>
-</head>
 <body>
-  <div class="uk-section uk-width-auto">
-
-    <div class="uk-container uk-container-expand uk-width-expand  ">
-      <div class="title">
-        <h1>Connexion</h1>
+  <div class="form-container">
+    <div class="title">
+      <h1>Connexion</h1>
+    </div>
+    <form class="uk-form-stacked uk-margin uk-width-auto">
+      <div class="uk-margin">
+        <div class="uk-form-stacked">
+          <label class="uk-form-label" for="form-horizontal-text">Nom utilisateur</label>
+          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Nom d'utilisateur">
         </div>
-      <form class="uk-form-stacked uk-margin uk-width-auto ">
-        <div class="uk-margin">
-            <div class="uk-form-stacked">
-              <label class="uk-form-label" for="form-horizontal-text">Nom utilisateur</label>
-              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="nom d'utilisateur">
-            </div>
+      </div>
+      <div class="uk-margin">
+        <div class="uk-form-stacked">
+          <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
+          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="Mot de passe">
+          <a routerLink="/recup-mdp">Mot de passe oublié ?</a>
         </div>
-        <div class="uk-margin">
-          <div class="uk-form-stacked">
-            <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="Mot de passe">
-            <a routerLink="/recup-mdp">mot de psse oublié ?</a>
-          </div>
       </div>
       <div>
         <button class="btn btn-primary" routerLink="/offre-emploi">Se connecter</button>
       </div>
     </form>
-    </div>
-</div>
+  </div>
 </body>
-</html>
+

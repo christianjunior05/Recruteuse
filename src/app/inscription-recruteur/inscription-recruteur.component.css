@@ -1,26 +1,34 @@
-body{
+body {
+  background-image: url("src/assets/images/1.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
+
+.uk-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 50px;
+  width: 500px;
+}
+
 .title{
   text-align: center;
 }
-form{
- width: 500px;
+
+form {
+  margin-top: 20px;
 }
-.btn{
-  text-align: end;
-}
-a
-{
-  color: black;
-}
+
 h1{
   font-family: 'Roboto';
   font-weight: bold;
   color: #5fcf80;
 }
+
 .btn-primary {
   background-color: #5fcf80;
   border: none;
@@ -30,6 +38,7 @@ h1{
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .btn-primary:hover {
   background-color: #02912d;
 }
