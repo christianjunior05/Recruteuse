@@ -4,4 +4,6 @@ export class Emplois {
     typePoste : string ;
     competences : string ;
     descriptionPoste : string ;
+    missions : string ;
+    fourchette_salariale : string ;
 }

@@ -1,46 +1,51 @@
 <app-navbar></app-navbar>
 <main>
-  <div class="container">
-    <h1 class="mt-4 mb-4">Trouvez votre prochain emploi</h1>
-    <form>
+  <div class="con">
+    <div class="container">
+      <h1 class="mt-4 mb-4">Trouvez votre prochain emploi</h1>
+      <form>
+        <div class="row">
+          <div class="col-sm-4 mb-4">
+            <input type="text" class="form-control" id="keywords" name="keywords" placeholder="Poste">
+          </div>
+          <div class="col-sm-4 mb-4">
+            <input type="text" class="form-control" id="location" name="location" placeholder="Ville">
+          </div>
+          <div class="col-sm-4 mb-4">
+            <select class="form-select" id="category" name="category">
+              <option value="" selected>Type de contrat</option>
+              <option value="informatique">CDD</option>
+              <option value="vente">CDI</option>
+              <option value="finance">Freelance</option>
+              <option value="finance">Remote</option>
+              <option value="finance">Stage</option>
+              <option value="finance">Consultance</option>
+            </select>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Rechercher</button>
+        </div>
+      </form>
+  </div>
+
+    <div  class="container">
+      <h1 class="text-center my-5">Liste des offres d'emploi</h1>
       <div class="row">
-        <div class="col-sm-4 mb-4">
-          <input type="text" class="form-control" id="keywords" name="keywords" placeholder="Poste">
-        </div>
-        <div class="col-sm-4 mb-4">
-          <input type="text" class="form-control" id="location" name="location" placeholder="Ville">
-        </div>
-        <div class="col-sm-4 mb-4">
-          <select class="form-select" id="category" name="category">
-            <option value="" selected>Type de contrat</option>
-            <option value="informatique">CDD</option>
-            <option value="vente">CDI</option>
-            <option value="finance">Freelance</option>
-            <option value="finance">Remote</option>
-          </select>
-        </div>
-      </div>
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Rechercher</button>
-      </div>
-    </form>
-</div>
-</main>
-<main>
-  <div  class="container">
-    <h1 class="text-center my-5">Liste des offres d'emploi</h1>
-    <div class="row">
-      <div *ngFor="let Emploi of emploiListe" class="col-md-6">
-        <div class="job-offer">
-          <h2>{{Emploi.titre}}</h2>
-          <p>{{Emploi.lieu}}</p>
-          <p><strong>Type de poste :</strong> {{Emploi.typePoste}}</p>
-          <p><strong>Compétences nécessaires :</strong>{{Emploi.competences}}</p>
-          <p><strong>Description du poste :</strong> {{Emploi.descriptionPoste}}</p>
-          <a routerLink="/postuler-offre" class="btn btn-primary">Postuler</a>
+        <div *ngFor="let Emploi of emploiListe" class="col-md-6">
+          <div class="job-offer">
+            <h2>{{Emploi.titre}}</h2>
+            <p>{{Emploi.lieu}}</p>
+            <p><strong>Type de poste :</strong> {{Emploi.typePoste}}</p>
+            <p><strong>Compétences nécessaires :</strong>{{Emploi.competences}}</p>
+            <p><strong>Description du poste :</strong> {{Emploi.descriptionPoste}}</p>
+            <p><strong>Mission du poste :</strong> {{Emploi.missions}}</p>
+            <a routerLink="/postuler-offre" class="btn btn-primary">Postuler</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  
 </main>
 <app-footer></app-footer>

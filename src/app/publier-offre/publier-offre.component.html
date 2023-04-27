@@ -20,12 +20,24 @@
       </div>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Description du poste</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Décrivez les principales responsabilités et les tâches associées à ce poste"></textarea>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Décrivez les principales responsabilités associées à ce poste"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mission du poste</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Décrivez les principales  tâches associées à ce poste"></textarea>
       </div>
         <div class="uk-margin">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">Type de poste </label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="CDD ,CDI ... ">
+            <select class="form-select" id="category" name="category">
+            <option value="" selected>Type de contrat</option>
+            <option value="informatique">CDD</option>
+            <option value="vente">CDI</option>
+            <option value="finance">Freelance</option>
+            <option value="finance">Remote</option>
+            <option value="finance">Stage</option>
+            <option value="finance">Consultance</option>
+            </select>
           </div>
       </div>
       <div class="uk-margin">
@@ -34,6 +46,15 @@
              nécessaires pour réussir dans ce poste</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
+    </div>
+    <div class="uk-margin">
+      <select class="form-select" id="category" name="category" required>
+        <option value="" selected>Fourchette Salariale</option>
+        <option value="informatique">75.000 fcfa- 150.000 fcfa</option>
+        <option value="vente">150.000 fcfa-300.000 fcfa</option>
+        <option value="finance">300.000 fcfa et plus</option>
+        
+      </select>
     </div>
       <div >
         <button class="btn btn-primary" routerLink='/profil-r'>Publier l'offre</button>

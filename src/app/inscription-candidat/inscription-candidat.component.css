@@ -15,9 +15,25 @@ body {
   width: 500px;
 }
 
-.title{
-  text-align: center;
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
+
+.title h1 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-close {
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
 
 form {
   margin-top: 20px;
