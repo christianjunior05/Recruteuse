@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +28,10 @@ import { NavRComponent } from './nav-r/nav-r.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
 import { PremiumComponent } from './premium/premium.component';
+import { UserComponent } from './user/user.component';
+import { StatsComponent } from './stats/stats.component';
+import { NotifsComponent } from './notifs/notifs.component';
+
 
 
 
@@ -58,14 +62,18 @@ import { PremiumComponent } from './premium/premium.component';
     NavRComponent,
     RechercheEmploiComponent,
     ProfilRComponent,
-    PremiumComponent
-  
+    PremiumComponent,
+    UserComponent,
+    StatsComponent,
+    NotifsComponent,
+      
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

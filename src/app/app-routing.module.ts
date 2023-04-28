@@ -21,38 +21,40 @@ import { PublierOffreComponent } from './publier-offre/publier-offre.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 import { PremiumComponent } from './premium/premium.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
+import { UserComponent } from './user/user.component';
+import { StatsComponent } from './stats/stats.component';
+import { NotifsComponent } from './notifs/notifs.component';
 
 const routes: Routes = [
-  {path:  '' , component: AccueilComponent},
-  {path : 'connexion-recruteur' , component: ConnexionRecruteurComponent},
-  {path : 'connexion-candidat' , component: ConnexionCandidatComponent},
-  {path : 'espace-candidat', component:EspaceCandidatComponent},
-  {path : 'espace-recruteur' , component: EspaceRecruteurComponent},
-  {path : 'inscription-recruteur' , component: InscriptionRecruteurComponent},
-  {path : 'inscription-candidat' , component: InscriptionCandidatComponent},
-  {path : 'offre-emploi' , component : OffreEmploiComponent},
-  {path : 'recup-mdp' , component: RecupMdpComponent},
-  {path : 'new-mdp' , component: NewMdpComponent},
-  {path : 'dashboard-admin' ,component : DashboardAdminComponent},
-  {path : 'connexion-admin' , component: ConnexionAdminComponent},
-  {path : 'accueil' , component: AccueilComponent},
-  {path : 'postuler-offre' , component : PostulerOffreComponent},
-  {path : 'TalentsComponent' ,component:TalentsComponent},
-  {path : 'profil-c' , component:ProfilCComponent},
-  {path : 'publier-offre' , component: PublierOffreComponent},
-  {path: 'talents' , component: TalentsComponent},
-  {path: 'recherche-emploi' , component: RechercheEmploiComponent},
-  {path: 'premium', component : PremiumComponent},
-  {path: 'profil-r' , component:ProfilRComponent}
-
+  { path: '', component: AccueilComponent },
+  { path: 'connexion-recruteur', component: ConnexionRecruteurComponent },
+  { path: 'connexion-candidat', component: ConnexionCandidatComponent },
+  { path: 'espace-candidat', component: EspaceCandidatComponent },
+  { path: 'espace-recruteur', component: EspaceRecruteurComponent },
+  { path: 'inscription-recruteur', component: InscriptionRecruteurComponent },
+  { path: 'inscription-candidat', component: InscriptionCandidatComponent },
+  { path: 'offre-emploi', component: OffreEmploiComponent },
+  { path: 'recup-mdp', component: RecupMdpComponent },
+  { path: 'new-mdp', component: NewMdpComponent },
+  { path: 'dashboard-admin', component: DashboardAdminComponent },
+  { path: 'connexion-admin', component: ConnexionAdminComponent },
+  { path: 'accueil', component: AccueilComponent },
+  { path: 'postuler-offre', component: PostulerOffreComponent },
+  { path: 'TalentsComponent', component: TalentsComponent },
+  { path: 'profil-c', component: ProfilCComponent },
+  { path: 'publier-offre', component: PublierOffreComponent },
+  { path: 'talents', component: TalentsComponent },
+  { path: 'recherche-emploi', component: RechercheEmploiComponent },
+  { path: 'premium', component: PremiumComponent },
+  { path: 'profil-r', component: ProfilRComponent },
+  { path: 'dashboard-admin/users', component: UserComponent },
+  { path: 'dashboard-admin/stats', component: StatsComponent },
+  { path: 'dashboard-admin/notifs', component: NotifsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
 
-
-
-
-exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
