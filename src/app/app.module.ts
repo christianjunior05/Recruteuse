@@ -1,7 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Aos } from 'aos';
-
+import { Aos } from 'aos';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,17 +29,13 @@ import { NavRComponent } from './nav-r/nav-r.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
 import { PremiumComponent } from './premium/premium.component';
-<<<<<<< HEAD
+
 import { UserComponent } from './user/user.component';
 import { StatsComponent } from './stats/stats.component';
 import { NotifsComponent } from './notifs/notifs.component';
 
-=======
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormationsComponent } from './formations/formations.component';
->>>>>>> ddbf12a73376c0e2311041c08866ed0938418f5b
-
-
 
 @NgModule({
   declarations: [
@@ -70,23 +65,15 @@ import { FormationsComponent } from './formations/formations.component';
     RechercheEmploiComponent,
     ProfilRComponent,
     PremiumComponent,
-<<<<<<< HEAD
     UserComponent,
     StatsComponent,
     NotifsComponent,
-      
-=======
     PageNotFoundComponent,
-    FormationsComponent
-  
->>>>>>> ddbf12a73376c0e2311041c08866ed0938418f5b
+    FormationsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

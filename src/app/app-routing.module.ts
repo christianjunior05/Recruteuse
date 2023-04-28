@@ -47,7 +47,7 @@ const routes: Routes = [
   { path: 'recherche-emploi', component: RechercheEmploiComponent },
   { path: 'premium', component: PremiumComponent },
   { path: 'profil-r', component: ProfilRComponent },
-  { path: '/dashboar-admin/user', component: UserComponent },
+  { path: '/dashboar-admin/users', component: UserComponent },
   { path: '/dashboar-admin/stats', component: StatsComponent },
   { path: '/dashboar-admin/notifs', component: NotifsComponent },
 ];
