@@ -1,25 +1,49 @@
-body{
+body {
+  background-image: url("src/assets/images/1.avif");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  height: 100vh;
 }
 
-.title{
+.form-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  width: 500px;
+}
+
+.title {
   text-align: center;
 }
-form{
- width: 500px;
 
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
 }
-.btn{
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  outline: none;
+  border-bottom: 2px solid #5fcf80;
+}
+
+.form-container a {
+  display: block;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #5fcf80;
+}
+
+.btn {
   text-align: end;
 }
 
-a
-{
-  color: black;
-}
 .btn-primary {
   background-color: #5fcf80;
   border: none;
@@ -28,7 +52,28 @@ a
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #fff;
+  padding: 10px 20px;
 }
+
 .btn-primary:hover {
   background-color: #02912d;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.title h1 {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-close {
+  position: absolute;
+  top: -20px;
+  right: 0;
 }

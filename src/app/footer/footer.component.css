@@ -118,10 +118,17 @@
     color: #fff;
     transition: 0.3s;
     border-radius: 50px;
+<<<<<<< HEAD
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
+=======
+    box-shadow: 0px 2px 15px ;
+  }
+  
+  #footer .footer-newsletter form input[type=submit]:hover {
+>>>>>>> ddbf12a73376c0e2311041c08866ed0938418f5b
     background: #3ac162;
 }
 

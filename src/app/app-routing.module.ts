@@ -22,8 +22,8 @@ import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.co
 import { PremiumComponent } from './premium/premium.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
 import { UserComponent } from './user/user.component';
-import { StatsComponent } from './stats/stats.component';
 import { NotifsComponent } from './notifs/notifs.component';
+import { StatsComponent } from './stats/stats.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -47,9 +47,9 @@ const routes: Routes = [
   { path: 'recherche-emploi', component: RechercheEmploiComponent },
   { path: 'premium', component: PremiumComponent },
   { path: 'profil-r', component: ProfilRComponent },
-  { path: 'dashboard-admin/users', component: UserComponent },
-  { path: 'dashboard-admin/stats', component: StatsComponent },
-  { path: 'dashboard-admin/notifs', component: NotifsComponent },
+  { path: '/dashboar-admin/user', component: UserComponent },
+  { path: '/dashboar-admin/stats', component: StatsComponent },
+  { path: '/dashboar-admin/notifs', component: NotifsComponent },
 ];
 
 @NgModule({

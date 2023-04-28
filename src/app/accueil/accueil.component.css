@@ -1,4 +1,5 @@
 
+
 h1,
 h2,
 h3,
@@ -12,6 +13,7 @@ h6 {
   height: 80vh;
   background: url("src/assets/images/111.jfif") top center;
   background-size: cover;
+  
  
 }
 
@@ -109,4 +111,9 @@ h2 , h3{
 }
 .why{
   color: #ffffff !important;
+}
+#txt{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 30px;
 }

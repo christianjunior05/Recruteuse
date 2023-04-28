@@ -1,22 +1,19 @@
-<div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-     <a  routerLink="/accueil"> La Recruteuse</a> 
-      </div>
+
+
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h3 class="m-0"> La Recruteuse </h3>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+           
+                <a routerLink="/offre-emploi" class="nav-link">Offre d'emploi</a>
+                <a routerLink="/talents" class="nav-link">Nos talents</a>
+                <a  routerLink="/inscription-candidat" class="nav-link">Candidat</a>
+                <a  routerLink="/inscription-recruteur" class="nav-link">Recruteur</a>
+        </div>
     </div>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    <div class="nav-links">
-      <a routerLink="/offre-emploi">Offre d'emploi</a>
-      <a routerLink="/talents">Nos Talents </a>
-      <a routerLink="/inscription-candidat"> Candidat</a>
-      <a routerLink="/inscription-recruteur">Recruteur</a>
-     
-    </div>
-  </div>
+</nav> 

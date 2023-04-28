@@ -137,6 +137,15 @@ export class DashboardAdminComponent implements OnInit {
       options: options1,
     });
   }
+    modalVisible = false;
+  
+    openModal() {
+      this.modalVisible = true;
+    }
+  
+    closeModal() {
+      this.modalVisible = false;
+    }
 
   // toggleSidebar() {
   //   this.isSidebarOpen = !this.isSidebarOpen;
