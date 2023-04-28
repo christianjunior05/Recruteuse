@@ -31,6 +31,7 @@ import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.co
 import { ProfilRComponent } from './profil-r/profil-r.component';
 import { PremiumComponent } from './premium/premium.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormationsComponent } from './formations/formations.component';
 
 
 
@@ -62,7 +63,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     RechercheEmploiComponent,
     ProfilRComponent,
     PremiumComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FormationsComponent
   
   ],
   imports: [
