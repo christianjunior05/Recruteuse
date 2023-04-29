@@ -24,6 +24,7 @@ import { ProfilRComponent } from './profil-r/profil-r.component';
 import { UserComponent } from './user/user.component';
 import { NotifsComponent } from './notifs/notifs.component';
 import { StatsComponent } from './stats/stats.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -47,9 +48,10 @@ const routes: Routes = [
   { path: 'recherche-emploi', component: RechercheEmploiComponent },
   { path: 'premium', component: PremiumComponent },
   { path: 'profil-r', component: ProfilRComponent },
-  { path: '/dashboar-admin/users', component: UserComponent },
-  { path: '/dashboar-admin/stats', component: StatsComponent },
-  { path: '/dashboar-admin/notifs', component: NotifsComponent },
+  { path: 'dashboard-admin/users', component: UserComponent },
+  { path: 'dashboard-admin/stats', component: StatsComponent },
+  { path: 'dashboard-admin/notifs', component: NotifsComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
