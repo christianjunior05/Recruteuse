@@ -29,11 +29,9 @@ import { NavRComponent } from './nav-r/nav-r.component';
 import { RechercheEmploiComponent } from './recherche-emploi/recherche-emploi.component';
 import { ProfilRComponent } from './profil-r/profil-r.component';
 import { PremiumComponent } from './premium/premium.component';
-
 import { UserComponent } from './user/user.component';
 import { StatsComponent } from './stats/stats.component';
 import { NotifsComponent } from './notifs/notifs.component';
-
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormationsComponent } from './formations/formations.component';
 
