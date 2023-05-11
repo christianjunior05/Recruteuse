@@ -60,3 +60,34 @@ li a:hover {
     justify-content: space-around;
     margin: 30px 5px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    margin: 0 0.5rem;
+}
+
+.card {
+    margin-top: 2rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    cursor: pointer;
+}
+
+.btn-info,
+.btn-danger {
+    margin-left: 0.5rem;
+}

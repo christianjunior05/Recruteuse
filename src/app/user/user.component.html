@@ -29,11 +29,75 @@
         </div>
         <div class="container">
             <h1>Utilisateurs</h1>
-            <div class="cards">
 
-            </div>
-            <div class="cards">
-
+            <div class="card-body shadow-sm p-3 mb-5 bg-white rounded">
+                <h3>Tous les Utilisateurs</h3>
+                <div class="form-inline mb-3">
+                    <label class="m-2">Affiche: </label>
+                    <select class="m-1">
+                        <option>25</option>
+                        <option>50</option>
+                        <option>100</option>
+                        <option>All</option>
+                    </select>
+                    <label class="m-2">Rechercher: </label>
+                    <input class="m-1" type="text" placeholder="Recherche Nom">
+                    <input class="m-1" type="text" placeholder="Recherche Prenoms">
+                    <input class="m-1" type="text" placeholder="Recherche Email">
+                    <select class="m-1">
+                        <option>Profil</option>
+                        <option>Candidat</option>
+                        <option>Recruteur</option>
+                    </select>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Email</th>
+                            <th>Profil</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@doe.com</td>
+                            <td>Recruteur</td>
+                            <td><button class="btn btn-sm btn-info">Voir +</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jean</td>
+                            <td>David</td>
+                            <td>jean@david.com</td>
+                            <td>Candidat</td>
+                            <td><button class="btn btn-sm btn-info">Voir +</button></td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>Dave</td>
+                            <td>joe@dave.com</td>
+                            <td>Candidat</td>
+                            <td><button class="btn btn-sm btn-info">Voir +</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><input type="text" placeholder="Recherche Nom"></td>
+                            <td><input type="text" placeholder="Recherche Prenoms"></td>
+                            <td><input type="text" placeholder="Recherche Email"></td>
+                            <td><select><option>Candidat</option><option>Recruteur</option></select></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="pagination">
+                    <button class="btn btn-primary">Précédent</button>
+                    <button class="btn btn-primary">Suivant</button>
+                </div>
             </div>
         </div>
     </div>
