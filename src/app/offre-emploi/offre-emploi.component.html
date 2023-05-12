@@ -38,20 +38,8 @@
             </div>
         </div>
         <div class="details-offre">
-            <!-- <div *ngFor="let Emploi of detailsEmploi">
-                <h2>{{Emploi.titre}}</h2>
-                <p>{{Emploi.lieu}}</p>
-                <hr>
-                <p><strong>Type de poste :</strong> {{Emploi.typePoste}}</p>
-                <p><strong>Compétences nécessaires :</strong>{{Emploi.competences}}</p>
-                <hr>
-                <p><strong>Description du poste :</strong> {{Emploi.descriptionPoste}}</p>
-                <p><strong>Mission du poste :</strong> {{Emploi.missions}}</p>
-                <hr>
-                <a routerLink="/postuler-offre" class="btn btn-primary">Postuler</a>
-            </div> -->
             <div id="details">
-                <h2 id="titre"></h2>
+                <h2 id="titre">Titre de l'offre</h2>
                 <p id="ville"></p>
                 <hr>
                 <p><strong>Type de poste :</strong><span id="type"></span></p>
@@ -60,73 +48,9 @@
                 <p><strong>Description du poste :</strong><span id="description"></span></p>
                 <p><strong>Mission du poste :</strong><span id="mission"></span></p>
                 <hr>
-                <a id="postuler" routerLink="/postuler-offre" class="btn btn-primary" style="display: none;">Postuler</a>
+                <a id="postuler" (click)="postuler()" routerLink="/postuler-offre" class="btn btn-primary" style="display: none;">Postuler</a>
             </div>
         </div>
     </div>
 </main>
 <app-footer></app-footer>
-<!-- <main> -->
-<!-- <div class="con">
-        <div class="container">
-            <h1 class="mt-4 mb-4">Trouvez votre prochain emploi</h1>
-            <form>
-                <div class="row">
-                    <div class="col-sm-4 mb-4">
-                        <input type="text" class="form-control" id="keywords" name="keywords" placeholder="Poste">
-                    </div>
-                    <div class="col-sm-4 mb-4">
-                        <input type="text" class="form-control" id="location" name="location" placeholder="Ville">
-                    </div>
-                    <div class="col-sm-4 mb-4">
-                        <select class="form-select" id="category" name="category">
-              <option value="" selected>Type de contrat</option>
-              <option value="informatique">CDD</option>
-              <option value="vente">CDI</option>
-              <option value="finance">Freelance</option>
-              <option value="finance">Remote</option>
-              <option value="finance">Stage</option>
-              <option value="finance">Consultance</option>
-            </select>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Rechercher</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="offre-main"> -->
-<!-- <div class="offres"> -->
-<!---style="width:75%"-->
-<!-- <div *ngFor="let Emploi of emploiListe" class="col-md-6">
-                <div class="job-offer">
-                    <h2>{{Emploi.titre}}</h2>
-                    <p>{{Emploi.lieu}}</p>
-                    <p><strong>Type de poste :</strong> {{Emploi.typePoste}}</p>
-                </div>
-            </div> -->
-<!-- </div> -->
-
-<!-- <div class="details-offre">bonsoir</div>
-        </div> -->
-
-<!-- <div  class="container">
-      <h1 class="text-center my-5">Liste des offres d'emploi</h1>
-      <div class="row">
-        <div *ngFor="let Emploi of emploiListe" class="col-md-6">
-          <div class="job-offer">
-            <h2>{{Emploi.titre}}</h2>
-            <p>{{Emploi.lieu}}</p>
-            <p><strong>Type de poste :</strong> {{Emploi.typePoste}}</p>
-            <p><strong>Compétences nécessaires :</strong>{{Emploi.competences}}</p>
-            <p><strong>Description du poste :</strong> {{Emploi.descriptionPoste}}</p>
-            <p><strong>Mission du poste :</strong> {{Emploi.missions}}</p>
-            <a routerLink="/postuler-offre" class="btn btn-primary">Postuler</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</main> -->
