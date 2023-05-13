@@ -11,7 +11,7 @@ export class OffreEmploiComponent implements OnInit {
   emploiListe: Emplois[] = EMPLOIS;
   constructor() {}
   ngOnInit(): void {
-    window.addEventListener('load', () => {
+    window.addEventListener('mouseover', () => {
       var offres = document.getElementsByClassName('job-offer');
 
       for (let i = 0; i < offres.length; i++) {

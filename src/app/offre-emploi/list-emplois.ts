@@ -62,5 +62,16 @@ export const EMPLOIS: Emplois[] =[
 
 },
 
+{
+    titre : "DevOps",
+    lieu : "Abidjan",
+    typePoste : "A temps plein",
+    competences : " GIT , docker",
+    descriptionPoste : "Concevoir des maquettes de l'interface utilisateur en utilisant des outils de design graphique tels que Photoshop ou Sketch.",
+    missions : "Concevoir l'expérience utilisateur en se basant sur les meilleures pratiques en matière de design d'interface utilisateur. Travailler en étroite collaboration avec les développeurs front-end pour assurer une intégration harmonieuse de l'interface utilisateur et de la partie technique.Effectuer des tests utilisateurs pour garantir une expérience utilisateur optimale..",
+    fourchette_salariale :  "75.000-150.000 fcfa",
+
+},
+
 
 ]
