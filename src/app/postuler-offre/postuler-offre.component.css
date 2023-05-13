@@ -73,3 +73,6 @@ body {
   .btn-primary:hover {
     background-color: #02912d;
   }
+  details{
+    text-align: center ;
+  }

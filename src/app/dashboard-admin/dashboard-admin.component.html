@@ -1,32 +1,7 @@
+<app-sidebar></app-sidebar>
 <div class="main">
     <div class="navbar"></div>
     <div class="wrapper">
-        <div class="sidebar">
-            <nav>
-                <ul>
-                    <li>
-                        <a routerLink="/dashboard-admin">
-                            <box-icon name="grid"></box-icon> Dashboard</a>
-                    </li>
-                    <li>
-                        <a routerLink="/dashboard-admin/users">
-                            <box-icon name="user"></box-icon> Utilisateurs</a>
-                    </li>
-                    <li>
-                        <a routerLink="/dashboard-admin/stats">
-                            <box-icon name="chart"></box-icon> Statistiques</a>
-                    </li>
-                    <li>
-                        <a routerLink="/dashboard-admin/notifs">
-                            <box-icon name="message"></box-icon> Notifications</a>
-                    </li>
-                    <li>
-                        <a routerLink="/accueil">
-                            <box-icon name="log-out"></box-icon> Deconnexion</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <div class="container">
             <h1>Dashboard</h1>
             <div class="cards">
@@ -35,12 +10,12 @@
                     <h2>26</h2>
                     <progress min="0" max="100" value="36"></progress>
                 </div>
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #1faf23;">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #898989;">
                     <h3>Candidats</h3>
                     <h2>74</h2>
                     <progress min="0" max="100" value="74"></progress>
                 </div>
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #e11ff2;">
+                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #000000;">
                     <h3>Total Utilisateurs</h3>
                     <h2>100</h2>
                 </div>
@@ -60,14 +35,14 @@
                 </div>
             </div>
             <div class="shadow-sm p-3 mb-5 bg-white rounded">
-                <h3>Utilisateurs</h3>
+                <h3>Candidats</h3>
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th>Nom</th>
                             <th>Prénom</th>
                             <th>Email</th>
-                            <th>Profil</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
@@ -75,43 +50,93 @@
                             <td>John</td>
                             <td>Doe</td>
                             <td>john@doe.com</td>
-                            <td>Recruteur</td>
+                           
                         </tr>
                         <tr>
                             <td>Jean</td>
                             <td>David</td>
                             <td>jean@david.com</td>
-                            <td>Candidat</td>
                         </tr>
                         <tr>
                             <td>Joe</td>
                             <td>Dave</td>
                             <td>joe@dave.com</td>
-                            <td>Candidat</td>
+                           
                         </tr>
                         <tr>
                             <td>Steph</td>
                             <td>Curry</td>
                             <td>steph@curry.com</td>
-                            <td>Candidat</td>
+                           
                         </tr>
                         <tr>
                             <td>Lebron</td>
                             <td>James</td>
                             <td>lebron@james.com</td>
-                            <td>Recruteur</td>
+                           
                         </tr>
                         <tr>
                             <td>Lionnel</td>
                             <td>Messi</td>
                             <td>leo@messi.com</td>
-                            <td>Candidat</td>
+                           
                         </tr>
                         <tr>
                             <td>Critiano</td>
                             <td>Ronaldo</td>
                             <td>cristiano@ronaldo.com</td>
-                            <td>Candidat</td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="d-flex mt-3 " routerLink="/dashboard-admin/users">Voir Plus...</a>
+            </div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded">
+                <h3>Recruteurs</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@doe.com</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Jean</td>
+                            <td>David</td>
+                            <td>jean@david.com</td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>Dave</td>
+                            <td>joe@dave.com</td>
+                        </tr>
+                        <tr>
+                            <td>Steph</td>
+                            <td>Curry</td>
+                            <td>steph@curry.com</td>
+                        </tr>
+                        <tr>
+                            <td>Lebron</td>
+                            <td>James</td>
+                            <td>lebron@james.com</td>
+                        </tr>
+                        <tr>
+                            <td>Lionnel</td>
+                            <td>Messi</td>
+                            <td>leo@messi.com</td>
+                        </tr>
+                        <tr>
+                            <td>Critiano</td>
+                            <td>Ronaldo</td>
+                            <td>cristiano@ronaldo.com</td>
                         </tr>
                     </tbody>
                 </table>

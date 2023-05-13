@@ -34,6 +34,7 @@ import { StatsComponent } from './stats/stats.component';
 import { NotifsComponent } from './notifs/notifs.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormationsComponent } from './formations/formations.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { FormationsComponent } from './formations/formations.component';
     NotifsComponent,
     PageNotFoundComponent,
     FormationsComponent,
+    SidebarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
