@@ -1,55 +1,54 @@
 <app-navbar></app-navbar>
-<div id="details">
-  <h2 id="titre"></h2>
-  <p id="ville"></p>
-  <hr>
-  <p><strong>Type de poste :</strong><span id="type"></span></p>
-  <p><strong>Compétences nécessaires :</strong><span id="competence"></span></p>
-  <hr>
-  <p><strong>Description du poste :</strong><span id="description"></span></p>
-  <p><strong>Mission du poste :</strong><span id="mission"></span></p>
-  <hr>
-  <a id="postuler" routerLink="/postuler-offre" class="btn btn-primary" style="display: none;">Postuler</a>
+<div>
+    <div id="details">
+        <h2>{{titre}}</h2>
+        <p>{{ville}}</p>
+        <hr>
+        <p><strong>Type de poste :</strong><span>{{type}}</span></p>
+        <p><strong>Compétences nécessaires :</strong><span>{{competence}}</span></p>
+        <hr>
+        <p><strong>Description du poste :</strong><span>{{description}}</span></p>
+        <p><strong>Mission du poste :</strong><span>{{mission}}</span></p>
+        <hr>
+    </div>
 </div>
-
-
-  <div class="container mt-5">
+<div class="container mt-5">
     <h1 class="text-center mb-4">Postuler à l'offre d'emploi</h1>
 
     <form action="#" method="post">
-      <div class="form-group">
-        <label for="nom">Nom :</label>
-        <input type="text" name="nom" id="nom" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="prenom">Prénom :</label>
-        <input type="text" name="prenom" id="prenom" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email :</label>
-        <input type="email" name="email" id="email" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Numéro de Telephone (fonctionnelle)</label>
-        <input type="email" name="numero de telephone" id="email" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="cv">CV :</label>
-        <input type="file" class="form-control-file" required>
-      </div>
-      <div class="form-group">
-        <label for="lettre_motivation">Lettre de motivation :</label>
-        <textarea  class="form-control" rows="5" required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="disponibilite">Disponibilité :</label>
-        <input type="text" name="disponibilite" id="disponibilite" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="remarques">Remarques :</label>
-        <textarea name="remarques" id="remarques" class="form-control" rows="5"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" routerLink="/profil-c">Envoyer</button>
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom :</label>
+            <input type="text" name="prenom" id="prenom" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Numéro de Telephone (fonctionnelle)</label>
+            <input type="email" name="numero de telephone" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="cv">CV :</label>
+            <input type="file" class="form-control-file" required>
+        </div>
+        <div class="form-group">
+            <label for="lettre_motivation">Lettre de motivation :</label>
+            <textarea class="form-control" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="disponibilite">Disponibilité :</label>
+            <input type="text" name="disponibilite" id="disponibilite" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="remarques">Remarques :</label>
+            <textarea name="remarques" id="remarques" class="form-control" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" routerLink="/profil-c">Envoyer</button>
     </form>
-  </div>
+</div>
 <app-footer></app-footer>
