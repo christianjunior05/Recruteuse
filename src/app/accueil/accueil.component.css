@@ -1,5 +1,3 @@
-
-
 h1,
 h2,
 h3,
@@ -8,16 +6,13 @@ h5,
 h6 {
   font-family: "Roboto", sans-serif;
 }
+
 #hero {
   width: 100%;
   height: 80vh;
   background: url("src/assets/images/111.jfif") top center;
-  background-size: cover;
-  
- 
+  background-size: cover; 
 }
-
-
 
 #hero .container {
   padding-top: 72px;
@@ -99,21 +94,22 @@ h6 {
   font-weight: 700;
   margin: 0 0 30px 0;
 }
+
 .why-us .icon-boxes .icon-box p {
   font-size: 15px;
   color: #848484;
 }
-h1{
-  color: #fff;
+
+@media (max-width: 768px) {
+  /* Modifier les styles pour les écrans de largeur maximale de 768px */
+  .why-us .icon-boxes .icon-box {
+    width: 50%;
+  }
 }
-h2 , h3{
-  color: #5fcf80;
-}
-.why{
-  color: #ffffff !important;
-}
-#txt{
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 30px;
+
+@media (max-width: 576px) {
+  /* Modifier les styles pour les écrans de largeur maximale de 576px */
+  .why-us .icon-boxes .icon-box {
+    width: 100%;
+  }
 }
