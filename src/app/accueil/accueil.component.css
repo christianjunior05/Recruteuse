@@ -5,6 +5,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", sans-serif;
+  
 }
 
 #hero {
@@ -12,6 +13,9 @@ h6 {
   height: 80vh;
   background: url("src/assets/images/111.jfif") top center;
   background-size: cover; 
+}
+#hero h1,h2 {
+  color: #fff;
 }
 
 #hero .container {
@@ -48,6 +52,7 @@ h6 {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .why-us .content p {
