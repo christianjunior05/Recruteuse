@@ -3,14 +3,6 @@
     background-color: #e9e9e9;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    height: 75px;
-    margin-bottom: 25px;
-    background-color: #5fcf80;
-    z-index: 100;
-}
 li {
     list-style: none;
     margin: 15px 5px;
@@ -28,9 +20,8 @@ li a:hover {
 }
 
 .container {
-    position: relative;
-    left: 15%;
-    width: 80%;
+    width: 90%;
+    margin: 10px auto;
     padding: 15px 0px 15px 15px;
 }
 

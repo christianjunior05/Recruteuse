@@ -25,7 +25,6 @@ h1 {
 .offres {
     height: 75vh;
     overflow: scroll;
-  
 }
 
 .offres::-webkit-scrollbar,
@@ -95,13 +94,31 @@ form {
     background-color: #02912d;
 }
 
+
 /* Styles pour les écrans jusqu'à 768px */
+
 @media (max-width: 768px) {
-    .details-offre,
-    .job-offer,
     form {
-      width: 100%;
-      max-width: 100%;
+        width: 100%;
+        max-width: 100%;
     }
-  }
-  
+    .offre-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .offres {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: scroll;
+        width: 100%;
+        height: auto;
+        margin: 15px 15px;
+    }
+    .details-offre {
+        width: 100%;
+    }
+    .job-offer {
+        margin: 5px 15px;
+    }
+}

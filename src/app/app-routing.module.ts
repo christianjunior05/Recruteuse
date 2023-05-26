@@ -48,9 +48,9 @@ const routes: Routes = [
   { path: 'recherche-emploi', component: RechercheEmploiComponent },
   { path: 'premium', component: PremiumComponent },
   { path: 'profil-r', component: ProfilRComponent },
-  { path: 'dashboard-admin/users', component: UserComponent },
-  { path: 'dashboard-admin/stats', component: StatsComponent },
-  { path: 'dashboard-admin/notifs', component: NotifsComponent },
+  { path: 'dashboard-admin-users', component: UserComponent },
+  { path: 'dashboard-admin-stats', component: StatsComponent },
+  { path: 'dashboard-admin-notifs', component: NotifsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
