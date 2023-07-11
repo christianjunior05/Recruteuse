@@ -1,70 +1,42 @@
+<app-sidebar></app-sidebar>
 <div class="main">
-    <div class="navbar"></div>
-    <div class="wrapper">
-        <div class="sidebar">
-            <nav>
-                <ul>
-                    <li>
-                        <a routerLink="/dashboard-admin">
-                            <box-icon name="grid"></box-icon> Dashboard</a>
-                    </li>
-                    <li>
-                        <a routerLink="/dashboard-admin/users">
-                            <box-icon name="user"></box-icon> Utilisateurs</a>
-                    </li>
-                    <li>
-                        <a routerLink="/dashboard-admin/stats">
-                            <box-icon name="chart"></box-icon> Statistiques</a>
-                    </li>
-                    <li>
-                        <a routerLink="/dashboard-admin/notifs">
-                            <box-icon name="message"></box-icon> Notifications</a>
-                    </li>
-                    <li>
-                        <a routerLink="/accueil">
-                            <box-icon name="log-out"></box-icon> Deconnexion</a>
-                    </li>
-                </ul>
-            </nav>
+    <div class="container">
+        <h1>Statistiques</h1>
+        <div class="cards">
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #000000;">
+                <h3>Recruteurs</h3>
+                <h2>26</h2>
+                <progress min="0" max="100" value="36"></progress>
+            </div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #1faf23;">
+                <h3>Candidats</h3>
+                <h2>74</h2>
+                <progress min="0" max="100" value="74"></progress>
+            </div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #e11ff2;">
+                <h3>Total Utilisateurs</h3>
+                <h2>100</h2>
+            </div>
         </div>
-        <div class="container">
-            <h1>Statistiques</h1>
-            <div class="cards">
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #e1ff23;">
-                    <h3>Recruteurs</h3>
-                    <h2>26</h2>
-                    <progress min="0" max="100" value="36"></progress>
-                </div>
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #1faf23;">
-                    <h3>Candidats</h3>
-                    <h2>74</h2>
-                    <progress min="0" max="100" value="74"></progress>
-                </div>
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 30%; height: 150px; border-left: 15px solid #e11ff2;">
-                    <h3>Total Utilisateurs</h3>
-                    <h2>100</h2>
+        <div class="cards">
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 62%; height: 350px;">
+                <h3>visite Utilisateurs</h3>
+                <div>
+                    <canvas id="barChart" width="400" height="200"></canvas>
                 </div>
             </div>
-            <div class="cards">
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 62%; height: 350px;">
-                    <h3>visite Utilisateurs</h3>
-                    <div>
-                        <canvas id="barChart" width="400" height="200"></canvas>
-                    </div>
-                </div>
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 28%; height: 350px;">
-                    <h3>Profile Visiteurs</h3>
-                    <div>
-                        <canvas id="pieChart" width="200" height="200"></canvas>
-                    </div>
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 28%; height: 350px;">
+                <h3>Profile Visiteurs</h3>
+                <div>
+                    <canvas id="pieChart" width="200" height="200"></canvas>
                 </div>
             </div>
-            <div class="cards">
-                <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 100%; height: 550px;">
-                    <h3>Ofrres Publiees</h3>
-                    <div>
-                        <canvas id="lineChart" width="400" height="200"></canvas>
-                    </div>
+        </div>
+        <div class="cards">
+            <div class="shadow-sm p-3 mb-5 bg-white rounded" style=" width: 100%; height: 550px;">
+                <h3>Ofrres Publiees</h3>
+                <div>
+                    <canvas id="lineChart" width="400" height="200"></canvas>
                 </div>
             </div>
         </div>

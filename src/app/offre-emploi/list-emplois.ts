@@ -73,5 +73,4 @@ export const EMPLOIS: Emplois[] =[
 
 },
 
-
 ]

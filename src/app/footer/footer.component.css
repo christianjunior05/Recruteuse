@@ -4,7 +4,6 @@
     background: #eef0ef;
     margin-top: 15px;
 }
-
 #footer .footer-top {
     padding: 60px 0 30px 0;
     background: #f9faf9;
@@ -103,6 +102,7 @@
     border: 0;
     padding: 4px 8px;
     width: calc(100% - 100px);
+    
 }
 
 #footer .footer-newsletter form input[type="submit"] {
@@ -117,13 +117,9 @@
     background: #5fcf80;
     color: #fff;
     transition: 0.3s;
-    border-radius: 50px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;  
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
-    box-shadow: 0px 2px 15px;
-}
 
 #footer .footer-newsletter form input[type="submit"]:hover {
     background: #3ac162;

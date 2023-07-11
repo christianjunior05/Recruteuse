@@ -7,11 +7,26 @@
       </div>
       <form class="uk-form-stacked uk-margin uk-width-auto ">
         <div class="uk-margin">
-            <div class="uk-form-stacked">
-              <label class="uk-form-label" for="form-horizontal-text">Nom & Prénoms</label>
-              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Nom et prenoms">
-            </div>
+          <div class="uk-form-stacked">
+            <label class="uk-form-label" for="form-horizontal-text">Nom & Prénoms</label>
+            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Nom et prénoms">
+          </div>
         </div>
+        
+        <div class="uk-margin">
+          <div class="uk-form-stacked">
+            <label class="uk-form-label" for="sexe-select">Sexe</label>
+            <div class="uk-form-controls">
+              <select class="uk-select" id="sexe-select" name="sexe">
+                <option value="" selected disabled>Choisissez une option</option>
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Féminin</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
         <div class="uk-margin">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">E-mail</label>
@@ -21,7 +36,7 @@
         <div class="uk-margin">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="Mot de passe">
+            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="mot de passe">
           </div>
         </div>
       <div class="uk-margin">

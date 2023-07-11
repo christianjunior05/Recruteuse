@@ -7,11 +7,10 @@
   
   body {
     margin: 0px;
-    font-family: 'segoe ui';
   }
   
   .nav {
-    height: 100px;
+    height: 400px ;
     width: 100%;
     justify-content: space-between;
   }
