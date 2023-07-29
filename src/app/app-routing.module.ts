@@ -24,7 +24,9 @@ import { ProfilRComponent } from './profil-r/profil-r.component';
 import { UserComponent } from './user/user.component';
 import { NotifsComponent } from './notifs/notifs.component';
 import { StatsComponent } from './stats/stats.component';
+import { CandidatComponent } from './candidat/candidat.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RecruteurComponent } from './recruteur/recruteur.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -52,10 +54,13 @@ const routes: Routes = [
   { path: 'dashboard-admin-stats', component: StatsComponent },
   { path: 'dashboard-admin-notifs', component: NotifsComponent },
   { path: '**', component: PageNotFoundComponent },
+  { path: 'candidat', component: CandidatComponent },
+  { path: 'recruteur', component:RecruteurComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+
 
   exports: [RouterModule],
 })

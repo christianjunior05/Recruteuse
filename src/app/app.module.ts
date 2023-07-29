@@ -35,6 +35,8 @@ import { NotifsComponent } from './notifs/notifs.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormationsComponent } from './formations/formations.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { CandidatComponent } from './candidat/candidat.component';
+import { RecruteurComponent } from './recruteur/recruteur.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +72,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     PageNotFoundComponent,
     FormationsComponent,
     SidebarComponent,
+    CandidatComponent,
+    RecruteurComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
