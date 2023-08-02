@@ -53,9 +53,9 @@ const routes: Routes = [
   { path: 'dashboard-admin-users', component: UserComponent },
   { path: 'dashboard-admin-stats', component: StatsComponent },
   { path: 'dashboard-admin-notifs', component: NotifsComponent },
-  { path: '**', component: PageNotFoundComponent },
   { path: 'candidat', component: CandidatComponent },
-  { path: 'recruteur', component:RecruteurComponent}
+  { path: 'recruteur', component:RecruteurComponent},
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
