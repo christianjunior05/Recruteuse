@@ -5,41 +5,41 @@
         <h1>Inscription</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" routerLink='/page-de-choix-c'></button>
         </div>
-      <form class="uk-form-stacked uk-margin uk-width-auto ">
-        <div class="uk-margin">
+      <form class="uk-form-stacked uk-margin uk-width-auto " [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+        <div class="uk-margin form-group"> 
             <div class="uk-form-stacked">
               <label class="uk-form-label" for="form-horizontal-text">Nom de l'entreprise</label>
-              <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="nom de l'entreprise">
+              <input class="uk-input uk-width-1-1" formControlName="name" id="form-horizontal-text" type="text" placeholder="nom de l'entreprise">
             </div>
         </div>
         <div class="form-group">
           <label for="photo-upload">Logo de l'entreprise</label>
-          <input class="form-control-file" id="photo-upload" type="file">
+          <input class="form-control-file" formControlName="photo"  id="photo-upload" type="file">
         </div>
        
-        <div class="uk-margin">
+        <div class="uk-margin form-group">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">Fonction</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="fonction">
+            <input class="uk-input uk-width-1-1" formControlName="fonction" id="form-horizontal-text" type="text" placeholder="fonction">
           </div>
       </div>
-      <div class="uk-margin">
+      <div class="uk-margin form-group">
         <div class="uk-form-stacked">
           <label class="uk-form-label" for="form-horizontal-text">Email</label>
-          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="email" placeholder="email">
+          <input class="uk-input uk-width-1-1" formControlName="email" id="form-horizontal-text" type="email" placeholder="email">
         </div>
     </div>
-    <div class="uk-margin">
+    <div class="uk-margin form-group">
       <div class="uk-form-stacked">
         <label class="uk-form-label" for="form-horizontal-text">mot de passe</label>
-        <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="mot de passe">
+        <input class="uk-input uk-width-1-1" formControlName="password" id="form-horizontal-text" type="password" placeholder="mot de passe">
         <a routerLink="/recup-mdp">mot de passe oublié ?</a>
       </div>
     
       
   </div>
       <div>
-        <button class="btn btn-primary" routerLink="/connexion-recruteur">S'inscrire</button>
+        <button class="btn btn-primary" >S'inscrire</button>
       </div>
     </form>
     </div>

@@ -1,25 +1,25 @@
 <body>
   <div class="form-container">
     <div class="title">
-      <h1>Connexion</h1>
+      <h1>Connexion </h1>
       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" routerLink='/page-de-choix-c'></button>
     </div>
-    <form class="uk-form-stacked uk-margin uk-width-auto">
+    <form class="uk-form-stacked uk-margin uk-width-auto"  [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
       <div class="uk-margin">
         <div class="uk-form-stacked">
-          <label class="uk-form-label" for="form-horizontal-text">Nom utilisateur</label>
-          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Nom d'utilisateur">
+          <label class="uk-form-label" for="form-horizontal-text">Email</label>
+          <input class="uk-input uk-width-1-1" formControlName="email" id="form-horizontal-text" type="text" placeholder="Email">
         </div>
       </div>
       <div class="uk-margin">
         <div class="uk-form-stacked">
           <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
-          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="Mot de passe">
+          <input class="uk-input uk-width-1-1" formControlName="password" id="form-horizontal-text" type="password" placeholder="Mot de passe">
           <a routerLink="/recup-mdp">Mot de passe oublié ?</a>
         </div>
       </div>
       <div>
-        <button class="btn btn-primary" routerLink="/profil-c">Se connecter</button>
+        <button class="btn btn-primary" >Se connecter</button>
       </div>
     </form>
   </div>

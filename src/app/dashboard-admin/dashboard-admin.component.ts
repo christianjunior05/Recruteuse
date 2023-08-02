@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
 
@@ -7,11 +8,14 @@ import Chart from 'chart.js/auto';
   styleUrls: ['./dashboard-admin.component.css'],
 })
 export class DashboardAdminComponent implements OnInit {
+  getJsonValue: any;
+  rect:any;
+  
   // isSidebarOpen = false;
   private barChart: Chart;
   private pieChart: Chart;
 
-  constructor() {}
+  constructor(private http: HttpClient) { this.get_candidat();}
 
   ngOnInit(): void {
     // Données de visites par mois
@@ -130,12 +134,12 @@ export class DashboardAdminComponent implements OnInit {
 
     // Création du graphique en secteurs
     const ctx1 = document.getElementById('pieChart') as HTMLCanvasElement;
-    this.pieChart = new Chart(ctx1, {
-      type: 'doughnut',
-      // type: 'pie',
-      data: data1,
-      options: options1,
-    });
+    // this.pieChart = new Chart(ctx1, {
+    //   type: 'doughnut',
+    //   // type: 'pie',
+    //   data: data1,
+    //   options: options1,
+    // });
   }
     modalVisible = false;
   
@@ -150,4 +154,22 @@ export class DashboardAdminComponent implements OnInit {
   // toggleSidebar() {
   //   this.isSidebarOpen = !this.isSidebarOpen;
   // }
+
+   /**
+   * afficher listes des candidats
+   */
+   public get_candidat() {
+    this.http.get("http://localhost/recrutement/nbCan.php").subscribe((data : any) => {
+      console.log(data);
+      this.getJsonValue = data.msg;
+    }
+    );
+  }
+  public get_rec() {
+    this.http.get("http://localhost/recrutement/nbRec.php").subscribe((data : any) => {
+      console.log(data);
+      this.rect = data.msg;
+    }
+    );
+  }
 }

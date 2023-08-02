@@ -5,11 +5,11 @@
         <h1>Inscription</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" routerLink='/accueil'></button>
       </div>
-      <form class="uk-form-stacked uk-margin uk-width-auto ">
-        <div class="uk-margin">
+      <form class="uk-form-stacked uk-margin uk-width-auto "  [formGroup]="reactiveForm" (ngSubmit)="onSubmit()" >
+        <div class="uk-margin form-group">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">Nom & Prénoms</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="text" placeholder="Nom et prénoms">
+            <input class="uk-input uk-width-1-1" formControlName="name" id="form-horizontal-text" type="text" placeholder="Nom et prénoms">
           </div>
         </div>
         
@@ -27,26 +27,26 @@
           </div>
         </div>
         
-        <div class="uk-margin">
+        <div class="uk-margin form-group">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">E-mail</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="email" placeholder="email">
+            <input class="uk-input uk-width-1-1" formControlName="email" id="form-horizontal-text" type="email" placeholder="email">
           </div>
       </div>
-        <div class="uk-margin">
+        <div class="uk-margin form-group">
           <div class="uk-form-stacked">
             <label class="uk-form-label" for="form-horizontal-text">Mot de passe</label>
-            <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="mot de passe">
+            <input class="uk-input uk-width-1-1" formControlName="password"  id="form-horizontal-text" type="password" placeholder="mot de passe">
           </div>
         </div>
-      <div class="uk-margin">
+      <div class="uk-margin form-group">
         <div class="uk-form-stacked">
           <label class="uk-form-label" for="form-horizontal-text">Confirmation du mot de passe</label>
-          <input class="uk-input uk-width-1-1" id="form-horizontal-text" type="password" placeholder="confirmation du mot de passe">
+          <input class="uk-input uk-width-1-1"  formControlName="conf_password"  id="form-horizontal-text" type="password" placeholder="confirmation du mot de passe">
         </div>
       </div>
       <div>
-        <button class="btn btn-primary" routerLink="/connexion-candidat">S'inscrire</button><br>
+        <button class="btn btn-primary" >S'inscrire</button><br>
       </div>
     </form>
     </div>

@@ -7,23 +7,23 @@
           <h1 class="text-center">Connexion administrateur</h1>
         </div>
         <div class="card-body">
-          <form class="needs-validation" novalidate>
+          <form class="needs-validation"   [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
               <label for="identifiant">Identifiant</label>
-              <input type="text" class="form-control" id="identifiant" placeholder="Identifiant" required>
+              <input type="text" class="form-control"  formControlName="email" id="identifiant" placeholder="Identifiant" required>
               <div class="invalid-feedback">
                 Veuillez entrer votre identifiant.
               </div>
             </div>
             <div class="form-group">
               <label for="password">Mot de passe</label>
-              <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+              <input type="password" class="form-control"  formControlName="password" id="password" placeholder="Mot de passe" required>
               <div class="invalid-feedback">
                 Veuillez entrer votre mot de passe.
               </div>
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-primary" routerLink="/dashboard-admin">Se connecter</button>
+              <button type="submit" class="btn btn-primary" >Se connecter</button>
             </div>
           </form>
         </div>
